@@ -31,6 +31,10 @@ exports.check = function (css, options) {
     }
 
     rule.declarations.forEach(function (declaration) {
+      if (declaration.type !== 'declaration') {
+        return;
+      }
+
       var urls = declaration.value.match(/url\(['"]?.*?['"]?\)/g);
 
       if (!urls) {
