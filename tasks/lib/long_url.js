@@ -11,20 +11,18 @@
 var grunt = require('grunt');
 var parse = require('css-parse');
 
-function unquote(str) {
-  str = str.substring(4, str.length - 1);
-  str = str.replace(/['"]/g, '');
+exports.check = function (css, options) {
+  var unquote = function (str) {
+    str = str.substring(4, str.length - 1);
+    str = str.replace(/['"]/g, '');
 
-  return str;
-}
-
-exports.lint = function (css, options) {
+    return str;
+  };
   var result = {
     errors: 0,
     warnings: 0,
     urls: []
   };
-
   var rules = parse(css).stylesheet.rules;
 
   rules.forEach(function (rule) {

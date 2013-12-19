@@ -1,7 +1,7 @@
 'use strict';
 
+var check = require('../tasks/lib/long_url').check;
 var grunt = require('grunt');
-var lint = require('../tasks/lib/css-url').lint;
 var path = require('path');
 
 var css;
@@ -17,7 +17,7 @@ exports.long_url = {
   default_options: function (test) {
     test.expect(1);
 
-    var actual = lint(grunt.file.read(css), {
+    var actual = check(grunt.file.read(css), {
       warning: 1000,
       error: 2000
     });
@@ -29,7 +29,7 @@ exports.long_url = {
   custom_options: function (test) {
     test.expect(1);
 
-    var actual = lint(grunt.file.read(css), {
+    var actual = check(grunt.file.read(css), {
       warning: 100,
       error: 1000
     });
@@ -41,7 +41,7 @@ exports.long_url = {
   warning_off: function (test) {
     test.expect(1);
 
-    var actual = lint(grunt.file.read(css), {
+    var actual = check(grunt.file.read(css), {
       warning: 0,
       error: 2000
     });

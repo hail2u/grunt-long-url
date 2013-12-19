@@ -9,10 +9,10 @@
 'use strict';
 
 var async = require('async');
+var check = require('./lib/long_url').check;
 var grunt = require('grunt');
-var lint = require('./lib/css-url').lint;
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   var taskName = 'long_url';
   var taskDescription = 'Warn long URL in CSS files.';
 
@@ -30,8 +30,8 @@ module.exports = function(grunt) {
         return next();
       }
 
-      grunt.log.write('Checking ' + file + '.');
-      var result = lint(grunt.file.read(file), options);
+      grunt.log.write('Checking URLs in ' + file + '.');
+      var result = check(grunt.file.read(file), options);
 
       if (result.errors > 0) {
         grunt.log.error();
