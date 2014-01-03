@@ -8,15 +8,15 @@
 
 'use strict';
 
-var async = require('async');
-var check = require('./lib/long_url').check;
-var grunt = require('grunt');
-
 module.exports = function (grunt) {
   var taskName = 'long_url';
   var taskDescription = 'Warn long URL in CSS files.';
 
   grunt.registerMultiTask(taskName, taskDescription, function () {
+    var async = require('async');
+    var check = require('./lib/long_url').check;
+    var grunt = require('grunt');
+
     var done = this.async();
     var options = this.options({
       warning: 1000,
