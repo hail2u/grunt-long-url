@@ -23,11 +23,11 @@ module.exports = function (grunt) {
       error: 2000
     });
 
-    async.forEach(this.filesSrc, function (file, next) {
+    async.each(this.filesSrc, function (file, callback) {
       if (!grunt.file.exists(file)) {
         grunt.log.warn('Source file "' + file + '" not found.');
 
-        return next();
+        return callback();
       }
 
       grunt.log.write('Checking URLs in ' + file + '.');
@@ -51,7 +51,7 @@ module.exports = function (grunt) {
       }
 
       grunt.log.ok('Long URL not found.');
-      next();
+      callback();
     }, function (err) {
       done(err);
     });
