@@ -1,3 +1,4 @@
+/* jshint node: true */
 'use strict';
 
 var check = require('../tasks/lib/long_url').check;

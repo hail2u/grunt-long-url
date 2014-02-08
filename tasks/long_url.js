@@ -1,11 +1,4 @@
-/*
- * grunt-long-url
- * https://github.com/hail2u/grunt-long-url
- *
- * Copyright (c) 2013 Kyo Nagashima
- * Licensed under the MIT license.
- */
-
+/* jshint node: true */
 'use strict';
 
 module.exports = function (grunt) {
