@@ -43,7 +43,7 @@
   "keywords": [
     "gruntplugin",
     "css",
-    "datauri",
-    "dataurl"
+    "linter",
+    "datauri"
   ]
 }
