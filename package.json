@@ -2,19 +2,33 @@
   "name": "grunt-long-url",
   "description": "Warn long URL in CSS files.",
   "version": "0.1.1",
-  "homepage": "https://github.com/hail2u/grunt-long-url",
   "author": {
     "name": "Kyo Nagashima",
     "email": "kyo@hail2u.net",
     "url": "http:/hail2u.net/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/hail2u/grunt-long-url.git"
-  },
   "bugs": {
     "url": "https://github.com/hail2u/grunt-long-url/issues"
   },
+  "dependencies": {
+    "async": "~0.2.9",
+    "css-parse": "~1.6.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "homepage": "https://github.com/hail2u/grunt-long-url",
+  "keywords": [
+    "gruntplugin",
+    "css",
+    "linter",
+    "datauri"
+  ],
   "licenses": [
     {
       "type": "MIT",
@@ -22,25 +36,11 @@
     }
   ],
   "main": "Gruntfile.js",
-  "engines": {
-    "node": ">= 0.8.0"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hail2u/grunt-long-url.git"
   },
   "scripts": {
     "test": "grunt test"
-  },
-  "dependencies": {
-    "css-parse": "~1.6.0",
-    "async": "~0.2.9"
-  },
-  "devDependencies": {
-    "grunt-contrib-jshint": "~0.6.0",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt": "~0.4.2"
-  },
-  "keywords": [
-    "gruntplugin",
-    "css",
-    "linter",
-    "datauri"
-  ]
+  }
 }
