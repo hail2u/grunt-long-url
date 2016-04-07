@@ -20,13 +20,16 @@
   },
   "homepage": "https://github.com/hail2u/grunt-long-url",
   "keywords": [
-    "gruntplugin",
     "css",
-    "linter",
-    "datauri"
+    "datauri",
+    "gruntplugin",
+    "linter"
   ],
   "license": "MIT",
   "main": "Gruntfile.js",
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/hail2u/grunt-long-url.git"
