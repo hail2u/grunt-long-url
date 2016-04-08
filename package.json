@@ -8,12 +8,12 @@
   },
   "dependencies": {
     "async": "~0.2.9",
-    "css-parse": "~1.6.0"
+    "css-parse": "~2.0.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-jshint": "~0.6.0",
-    "grunt-contrib-nodeunit": "~0.2.0"
+    "grunt": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-nodeunit": "^1.0.0"
   },
   "engines": {
     "node": ">= 0.8.0"
