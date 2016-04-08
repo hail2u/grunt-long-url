@@ -1,7 +1,7 @@
 {
   "name": "grunt-long-url",
   "description": "Warn long URL in CSS files.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Kyo Nagashima <hail2u@gmail.com> (https://kyonagashima.com/)",
   "bugs": {
     "url": "https://github.com/hail2u/grunt-long-url/issues"
