@@ -15,9 +15,6 @@
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-nodeunit": "^1.0.0"
   },
-  "engines": {
-    "node": ">= 0.8.0"
-  },
   "homepage": "https://github.com/hail2u/grunt-long-url",
   "keywords": [
     "css",
